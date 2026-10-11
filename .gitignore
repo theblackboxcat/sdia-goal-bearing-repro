@@ -1,0 +1,29 @@
+# genes / trained weights (not in public slim package)
+genes/
+*.npz
+*.pt
+*.pth
+*.pkl
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+venv_*/
+.env
+
+# logs / local runs
+logs/
+tune/
+*.log
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# archives
+*.tar.gz
+*.zip

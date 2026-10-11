@@ -1,0 +1,89 @@
+{
+  "schema": "summary_Dx2_v1_public",
+  "experiment": "Dx2_leak_ruler",
+  "finished_note": "Measurement noise dominates; VOID line 0.35 and denominator=8 unchanged. Clean 8 seeds frozen for S1g/S1h2.",
+  "meta": {
+    "thresholds_sha256": "133a119d95f64533a4fae035dad3d2ad8a29a9e99cee83501e2e1245b817ce8c",
+    "started_at": "2026-10-11T14:02:37+0800",
+    "N": 4,
+    "T": 200,
+    "K": [
+      30,
+      70
+    ],
+    "window": 5,
+    "n_eps_default": 12,
+    "leak_max": 0.35,
+    "margin_max": 0.3
+  },
+  "clean_seeds": [
+    200,
+    205,
+    210,
+    211,
+    212,
+    216,
+    218,
+    219
+  ],
+  "clean_seeds_sha256": "22263a4f443d5be45ca4f1842a58fb971d0ef51d30933d8286610522b3e573f6",
+  "thresholds_sha256": "133a119d95f64533a4fae035dad3d2ad8a29a9e99cee83501e2e1245b817ce8c",
+  "protocol": {
+    "n_rep": 5,
+    "n_eps": 12,
+    "window": 5,
+    "N": 4,
+    "T": 200,
+    "K": [
+      30,
+      70
+    ],
+    "probe_seed_formula": "science_seed + 10007 + i * 100003",
+    "accept_leak_mean_max": 0.3,
+    "void_line_unchanged": 0.35,
+    "denom_unchanged": 8,
+    "SE_target": 0.02,
+    "calibrated_sd_median_single": 0.04389628143324542,
+    "calibrated_se_at_choice": 0.01963101384883973
+  },
+  "diagnosis_summary": {
+    "n_seeds": 18,
+    "sd_median": 0.05326672924886386,
+    "sd_mean": 0.05360250909643035,
+    "se_median": 0.023821605507907177,
+    "frac_sd_ge_0_03": 0.9444444444444444,
+    "conclusion_preregistered_rule": "measurement_noise_dominant"
+  },
+  "calibration": {
+    "n_eps": 12,
+    "n_rep": 5,
+    "sd_median_single": 0.04389628143324542,
+    "se_at_choice": 0.01963101384883973,
+    "alternatives_n_eps": {
+      "24": {
+        "sd_median": 0.03269137265534855,
+        "n_rep_for_se": 3
+      },
+      "48": {
+        "sd_median": 0.02176750516817158,
+        "n_rep_for_se": 2
+      }
+    }
+  },
+  "prescreen_clean_seeds": [
+    200,
+    205,
+    210,
+    211,
+    212,
+    216,
+    218,
+    219
+  ],
+  "STOP": "do_not_start_S1g",
+  "forbid": [
+    "Do not weaken leak VOID line 0.35",
+    "Do not shrink VOID denominator from 8",
+    "Do not claim evolutionary unreachability from S1g ES alone"
+  ]
+}
