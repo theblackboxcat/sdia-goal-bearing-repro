@@ -1,0 +1,27 @@
+{
+  "schema": "void_prescreen_summary_v1",
+  "synthetic": true,
+  "note": "SYNTHETIC fixture. Positive control is omitted on purpose. Low leak_mean must be tagged PROBE_UNCALIBRATED and must not be read as no-leak. V1 stays unknown, not no.",
+  "denominator": 8,
+  "void_line": 0.35,
+  "void_line_source": "Dx2 N=4 chance 0.25; mean>0.35 VOID. Restated, not changed.",
+  "chance": 0.25,
+  "science_seeds": [9021, 9022, 9023, 9024, 9025, 9026, 9027, 9028],
+  "tune_seeds": [100, 101, 102, 103],
+  "defect_axis": "not_used",
+  "report_front_page": {
+    "void_rate_shown": true,
+    "denominator_shown": true,
+    "void_counted_as_fail": false
+  },
+  "seeds": [
+    {"seed": 9021, "leak_mean": 0.10, "sd": 0.02, "status": "PASS"},
+    {"seed": 9022, "leak_mean": 0.12, "sd": 0.02, "status": "PASS"},
+    {"seed": 9023, "leak_mean": 0.15, "sd": 0.02, "status": "PASS"},
+    {"seed": 9024, "leak_mean": 0.18, "sd": 0.02, "status": "PASS"},
+    {"seed": 9025, "leak_mean": 0.20, "sd": 0.02, "status": "PASS"},
+    {"seed": 9026, "leak_mean": 0.22, "sd": 0.02, "status": "PASS"},
+    {"seed": 9027, "leak_mean": 0.30, "sd": 0.02, "status": "PASS"},
+    {"seed": 9028, "leak_mean": 0.35, "sd": 0.02, "status": "PASS"}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "void_prescreen_summary_v1",
+  "synthetic": true,
+  "note": "SYNTHETIC stand-in for the documented uncalibrated pattern: every leak_mean pinned at chance 0.5 with sd 0. Not an E2 result and not a measurement. Must not become a VOID call and must not be read as no-leak.",
+  "denominator": 8,
+  "void_line": 0.35,
+  "void_line_source": "Dx2 N=4 line restated so the fixture cannot quietly switch the line. Classification must still withhold the chance pin.",
+  "chance": 0.5,
+  "science_seeds": [9031, 9032, 9033, 9034, 9035, 9036, 9037, 9038],
+  "tune_seeds": [100, 101, 102, 103],
+  "defect_axis": "not_used",
+  "report_front_page": {
+    "void_rate_shown": true,
+    "denominator_shown": true,
+    "void_counted_as_fail": false
+  },
+  "seeds": [
+    {"seed": 9031, "leak_mean": 0.5, "sd": 0.0, "samples": [0.5, 0.5, 0.5, 0.5, 0.5], "status": "PASS"},
+    {"seed": 9032, "leak_mean": 0.5, "sd": 0.0, "samples": [0.5, 0.5, 0.5, 0.5, 0.5], "status": "PASS"},
+    {"seed": 9033, "leak_mean": 0.5, "sd": 0.0, "samples": [0.5, 0.5, 0.5, 0.5, 0.5], "status": "PASS"},
+    {"seed": 9034, "leak_mean": 0.5, "sd": 0.0, "samples": [0.5, 0.5, 0.5, 0.5, 0.5], "status": "PASS"},
+    {"seed": 9035, "leak_mean": 0.5, "sd": 0.0, "samples": [0.5, 0.5, 0.5, 0.5, 0.5], "status": "PASS"},
+    {"seed": 9036, "leak_mean": 0.5, "sd": 0.0, "samples": [0.5, 0.5, 0.5, 0.5, 0.5], "status": "PASS"},
+    {"seed": 9037, "leak_mean": 0.5, "sd": 0.0, "samples": [0.5, 0.5, 0.5, 0.5, 0.5], "status": "PASS"},
+    {"seed": 9038, "leak_mean": 0.5, "sd": 0.0, "samples": [0.5, 0.5, 0.5, 0.5, 0.5], "status": "PASS"}
+  ]
+}

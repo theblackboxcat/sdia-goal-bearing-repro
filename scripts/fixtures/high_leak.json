@@ -1,0 +1,33 @@
+{
+  "schema": "void_prescreen_summary_v1",
+  "synthetic": true,
+  "note": "SYNTHETIC fixture. Not a science result, not E2, not a frozen file. High leak_mean values must be VOID candidates; 0.35 itself must not.",
+  "positive_control": {
+    "ran": true,
+    "injection_levels": [0.0, 0.5, 1.0],
+    "alarm": [false, true, true]
+  },
+  "clean_sample_alarm_count": 0,
+  "denominator": 8,
+  "void_line": 0.35,
+  "void_line_source": "Dx2 N=4 chance 0.25; mean>0.35 VOID. This fixture restates the frozen line and does not change it.",
+  "chance": 0.25,
+  "science_seeds": [9001, 9002, 9003, 9004, 9005, 9006, 9007, 9008],
+  "tune_seeds": [100, 101, 102, 103],
+  "defect_axis": "not_used",
+  "report_front_page": {
+    "void_rate_shown": true,
+    "denominator_shown": true,
+    "void_counted_as_fail": false
+  },
+  "seeds": [
+    {"seed": 9001, "leak_mean": 0.36, "sd": 0.02, "status": "VOID"},
+    {"seed": 9002, "leak_mean": 0.50, "sd": 0.02, "status": "VOID"},
+    {"seed": 9003, "leak_mean": 0.80, "sd": 0.02, "status": "VOID"},
+    {"seed": 9004, "leak_mean": 0.10, "sd": 0.02, "status": "PASS"},
+    {"seed": 9005, "leak_mean": 0.20, "sd": 0.02, "status": "PASS"},
+    {"seed": 9006, "leak_mean": 0.35, "sd": 0.02, "status": "PASS"},
+    {"seed": 9007, "leak_mean": 0.351, "sd": 0.02, "status": "VOID"},
+    {"seed": 9008, "leak_mean": 0.349, "sd": 0.02, "status": "PASS"}
+  ]
+}

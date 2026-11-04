@@ -1,0 +1,28 @@
+{
+  "schema": "void_prescreen_summary_v1",
+  "synthetic": true,
+  "note": "SYNTHETIC fixture. Declares denominator 4, which the protocol forbids. The script must tag INVALID and must not recompute a rate on 4.",
+  "positive_control": {
+    "ran": true,
+    "injection_levels": [0.0, 0.5, 1.0],
+    "alarm": [false, true, true]
+  },
+  "clean_sample_alarm_count": 0,
+  "denominator": 4,
+  "void_line": 0.35,
+  "chance": 0.25,
+  "science_seeds": [9041, 9042, 9043, 9044],
+  "tune_seeds": [100, 101, 102, 103],
+  "defect_axis": "not_used",
+  "report_front_page": {
+    "void_rate_shown": true,
+    "denominator_shown": true,
+    "void_counted_as_fail": false
+  },
+  "seeds": [
+    {"seed": 9041, "leak_mean": 0.10, "sd": 0.02, "status": "PASS"},
+    {"seed": 9042, "leak_mean": 0.20, "sd": 0.02, "status": "PASS"},
+    {"seed": 9043, "leak_mean": 0.40, "sd": 0.02, "status": "VOID"},
+    {"seed": 9044, "leak_mean": 0.11, "sd": 0.02, "status": "PASS"}
+  ]
+}
