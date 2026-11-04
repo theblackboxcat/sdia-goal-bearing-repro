@@ -1,0 +1,33 @@
+{
+  "schema": "void_prescreen_summary_v1",
+  "synthetic": true,
+  "note": "SYNTHETIC fixture. Not a science result. Every leak_mean is at or below 0.35, so none is a VOID candidate. Below-line is not a no-leak claim.",
+  "positive_control": {
+    "ran": true,
+    "injection_levels": [0.0, 0.5, 1.0],
+    "alarm": [false, true, true]
+  },
+  "clean_sample_alarm_count": 0,
+  "denominator": 8,
+  "void_line": 0.35,
+  "void_line_source": "Dx2 N=4 chance 0.25; mean>0.35 VOID. Restated, not changed.",
+  "chance": 0.25,
+  "science_seeds": [9011, 9012, 9013, 9014, 9015, 9016, 9017, 9018],
+  "tune_seeds": [100, 101, 102, 103],
+  "defect_axis": "not_used",
+  "report_front_page": {
+    "void_rate_shown": true,
+    "denominator_shown": true,
+    "void_counted_as_fail": false
+  },
+  "seeds": [
+    {"seed": 9011, "leak_mean": 0.10, "sd": 0.02, "status": "PASS"},
+    {"seed": 9012, "leak_mean": 0.12, "sd": 0.02, "status": "PASS"},
+    {"seed": 9013, "leak_mean": 0.15, "sd": 0.02, "status": "PASS"},
+    {"seed": 9014, "leak_mean": 0.18, "sd": 0.02, "status": "PASS"},
+    {"seed": 9015, "leak_mean": 0.20, "sd": 0.02, "status": "PASS"},
+    {"seed": 9016, "leak_mean": 0.22, "sd": 0.02, "status": "PASS"},
+    {"seed": 9017, "leak_mean": 0.30, "sd": 0.02, "status": "PASS"},
+    {"seed": 9018, "leak_mean": 0.35, "sd": 0.02, "status": "PASS"}
+  ]
+}

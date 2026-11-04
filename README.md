@@ -69,7 +69,12 @@ docs/       权威进度表 excerpt/copy, 回程摘要_S1g/S1h2, 后续方向_�
             P2_void_prescreen_2026-10-30.md, E2_C4pp_archive_extract_2026-10-30.md,
             PROBE_AUDIT_leak_2026-10-30.md, P1_occupation_sweep_READOUT_2026-10-31.md
 tools/      analyze_v2.py  (exploratory readout of an external sweep dump; no training)
+scripts/    void_prescreen.py  (read-only V1–V7 leak/VOID group-gate pre-screen)
 ```
+
+### Group-gate pre-screen
+
+`scripts/void_prescreen.py` 是组门前的只读 leak/VOID 预筛（清单 V1–V7，见 `docs/P2_void_prescreen_2026-10-30.md`）：读取 frozen 干净籽与阈值，输出 yes/no/unknown（unknown 保持 unknown，不计为 no）；若另给 summary JSON，则按既定 VOID 线 0.35（mean > 0.35）与分母 8 标出 VOID 候选。`frozen/` 与 `results/` 保持原样，科学臂保持关闭，S3 保持 CLOSED；没有阳性对照时标记 `PROBE_UNCALIBRATED`，chance 零方差不写成无泄漏，也不宣称数值渗流 p_c。English: this is the group-gate pre-screen; it does not change frozen artifacts or open arms. `python scripts/void_prescreen.py --self-test`.
 
 ---
 
